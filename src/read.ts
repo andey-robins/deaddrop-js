@@ -1,4 +1,4 @@
-import { getMessagesForUser, userExists } from "./db";
+import { getMessagesForUser, userExists, userReadMessage } from "./db";
 import { authenticate } from "./session";
 
 export async function readMessages(user: string) {
@@ -13,6 +13,8 @@ export async function readMessages(user: string) {
 
         getMessagesForUser(user).then((messages) => {
             messages.forEach((e: string) => console.log(e, "\n"));
+            
+        userReadMessage(user);
         });
 
     } catch (error) {
