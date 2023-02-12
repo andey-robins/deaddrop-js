@@ -14,17 +14,21 @@ export async function readMessages(user: string) {
         getMessagesForUser(user).then((messages) => {
             messages.forEach((e: string) => console.log(e, "\n"));
         var userRead = [];  //Desperation using array to log user info
+            
         var date = new Date(); //Date object to log access time
-        let time = alert(date);
-        userRead.push(user);
-        let timeAndDate = time.toString(); //Convert time to string 
-        userRead.push(timeAndDate);
-        // Taken from https://stackoverflow.com/questions/17614123/node-js-how-to-write-an-array-to-file  
-        const fs = require('fs');
-        var file = fs.createWriteStream('array.txt');
-        file.on('error', function(err) { /* error handling */});
-        userRead.forEach(function(v) { file.write(v.join(', ') + '\n'); })
-        file.end();
+        let time = date.toString(); 
+            
+        userRead.push(user);        //Push user name
+        userRead.push(time + ', '); //Push time accessed
+            
+        let log = userRead.toString(); //Convert array to string
+         
+        const fs = require('fs');                   
+        fs.writeFile(log.txt, log, err => {    //Write log out to file
+            if(err) {
+               console.log(err);
+            }
+        });
          
         
         userReadMessage(user);  //Attempt at using database to store user will try to figure out later 
