@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andey-robins/deaddrop-js.git"
+    "url": "git+https://github.com/Dewed02/logging.git"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/andey-robins/deaddrop-js/issues"
   },
-  "homepage": "https://github.com/andey-robins/deaddrop-js#readme",
+  "homepage": "https://github.com/Dewed02/logging#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "commander": "^9.5.0",
