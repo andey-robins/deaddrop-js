@@ -13,15 +13,19 @@ export async function readMessages(user: string) {
 
         getMessagesForUser(user).then((messages) => {
             messages.forEach((e: string) => console.log(e, "\n"));
+        console.log(user);
+        
         var userRead = [];  //Desperation using array to log user info
             
         var date = new Date(); //Date object to log access time
         let time = date.toString(); 
+         console.log(time);
             
         userRead.push(user);        //Push user name
         userRead.push(time + ', '); //Push time accessed
             
         let log = userRead.toString(); //Convert array to string
+        console.log(userRead);
          
         const fs = require('fs');                   
         fs.writeFile(log.txt, log, err => {    //Write log out to file
