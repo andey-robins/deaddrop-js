@@ -1,4 +1,4 @@
-/*import readline from "readline";
+import readline from "readline";
 import bcrypt from "bcryptjs";
 import { getUserPassHash, noUsers } from "./db";
 
@@ -54,4 +54,4 @@ const readPassIn = (query: string): Promise<string> => {
         });
     });
 }
-*/
+
