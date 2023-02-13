@@ -1,4 +1,4 @@
-import { connect } from "./db"
+/*import { connect } from "./db"
 
 export const getMessagesForUser = async (user: string): Promise<string[]> => {
     let db = await connect();
@@ -36,4 +36,4 @@ export const saveMessage = async (message: string, recipient: string) => {
         ":user": recipient,
         ":message": message,
     });
-}
+}*/
