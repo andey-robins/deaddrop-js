@@ -1,4 +1,4 @@
-export { 
+/*export { 
     userExists, 
     getUserId,
     getUserPassHash,
@@ -10,4 +10,4 @@ export {
 export {
     getMessagesForUser,
     saveMessage,
-} from "./message";
+} from "./message";*/
