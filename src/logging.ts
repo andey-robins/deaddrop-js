@@ -1,4 +1,4 @@
-import { connect } from "./db"
+import { connect } from "./db/db"
 
 export const userReadMessage = async (reader: string) => {
     let db = await connect();
