@@ -14,29 +14,29 @@ export async function readMessages(user: string) {
 
         getMessagesForUser(user).then((messages) => {
            messages.forEach((e: string) => console.log(e, "\n"));
-        console.log(user);
+       
         
-        //var userRead = [];  //Desperation using array to log user info
+        var userRead = [];  //Desperation using array to log user info
             
-        //var date = new Date(); //Date object to log access time
-       // let time = date.toString(); 
-       //  console.log(time);
+        var date = new Date(); //Date object to log access time
+        let time = date.toString(); 
+      
             
-        //userRead.push(user);        //Push user name
-        //userRead.push(time + ', '); //Push time accessed
+        userRead.push(user);        //Push user name
+        userRead.push(time + ', '); //Push time accessed
             
-       // let log = userRead.toString(); //Convert array to string
-        //console.log(userRead);
+        let log = userRead.toString(); //Convert array to string
+      
          
-        //const fs = require('fs');                   
-        //fs.writeFile('log.txt', log, function(err) => {    //Write log out to file
-           // if(err) {
-            //   console.log(err); 
-         //   }
-       // });
+        const fs = require('fs');    
+            
+        fs.writeFile("books.txt", data, (err) => {
+           if (err)
+             console.log(err); }
+        });
          
         
-        userReadMessage(user);  //Attempt at using database to store user will try to figure out later 
+        //userReadMessage(user);  //Attempt at using database to store user will try to figure out later 
         });
 
     } catch (error) {
