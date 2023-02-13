@@ -3,7 +3,7 @@ import { existsSync } from "fs";
 import { exit } from "process";
 import { Database, open } from "sqlite";
 
-const schema: string = `
+/*const schema: string = `
 CREATE TABLE Users (
     id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
     user TINYTEXT NOT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE [IF NOT EXISTS] MessageRead (              //Attempting to add tabl
    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
    reader INTEGER NOT NULL REFRENCES Users(id)
 );
-`
+`*/
 
 export const connect = async (): Promise<Database<sqlite3.Database, sqlite3.Statement>> => {
     try {
