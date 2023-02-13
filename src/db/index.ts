@@ -7,10 +7,6 @@ export {
 } from "./user";
 
 export {
-   userReadMessage,
-} from "./logging";
-
-export {
     getMessagesForUser,
     saveMessage,
 } from "./message";
