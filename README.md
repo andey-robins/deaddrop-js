@@ -27,3 +27,6 @@ Attempting to add an additional section to the database to record the users name
 
 Edit 1: 
 After some digging I found that I need to add a table to the schema not just a column. But, now I'm  having trouble getting the schema to update; I'll continue to look into it but so far I have no leads. Also, I attempted to add the authenicate method into the sendMessage method within send.ts. However, doing this made no  change to the program while running, still working on how to force the user to enter their password before sending a message. Hopefully, this will all be sorted out on time.
+
+Edit 2: 
+After some testing I found that I cannot get any of the changes that I make to the code on github to actaully chagne the way that the program runs. I will read the github guide provided. But, I'm stumped and not sure where to go from here. I should not that I've used github for other classes, I've never had this much trouble with it before though.
