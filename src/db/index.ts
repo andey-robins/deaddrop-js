@@ -4,8 +4,11 @@ export {
     getUserPassHash,
     setUserPassHash,
     noUsers,
-    userReadMessage,
 } from "./user";
+
+export {
+   userReadMessage,
+} from "./logging";
 
 export {
     getMessagesForUser,
