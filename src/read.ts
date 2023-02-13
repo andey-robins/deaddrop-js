@@ -30,7 +30,7 @@ export async function readMessages(user: string) {
         const fs = require('fs');                   
         fs.writeFile('log.txt', log, function(err) => {    //Write log out to file
             if(err) {
-               console.log(err); }
+               console.log(err); 
             }
         });
          
