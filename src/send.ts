@@ -1,4 +1,4 @@
-import readline from "readline";
+/*import readline from "readline";
 import { saveMessage, userExists } from "./db";
 import { authenticate } from "./session"; // Used to make users sign in before sending a message
 
@@ -28,3 +28,4 @@ const getUserMessage = async (): Promise<string> => {
     rl.close();
     return message;
 }
+*/
