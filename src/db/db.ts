@@ -1,4 +1,4 @@
-/*import sqlite3 from "sqlite3";
+import sqlite3 from "sqlite3";
 import { existsSync } from "fs";
 import { exit } from "process";
 import { Database, open } from "sqlite";
@@ -44,4 +44,4 @@ export const connect = async (): Promise<Database<sqlite3.Database, sqlite3.Stat
         exit();
     }
 }
-*/
+
