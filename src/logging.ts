@@ -1,15 +1,15 @@
 import { connect } from "./db/db"
 
-export const userReadMessage = async (username: string) => {
+export const userReadMessage = async (user: string) => {
     let db = await connect();
    
     await db.run(`
         INSERT INTO MessageRead
-            (username)
+            (user)
         VALUES (
             (SELECT user FROM Users WHERE user = :user)
         )
 `, {
-    ":username": username,
+    ":user": username,
    });
 }
