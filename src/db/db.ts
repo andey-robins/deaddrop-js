@@ -16,7 +16,7 @@ CREATE TABLE Messages (
     data TEXT NOT NULL
 );
 
-CREATE TABLE MessageRead (              //Attempting to add table to note if user accessed message
+CREATE TABLE MessageRead (              
    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
    username TEXT NOT NULL REFRENCES Users(user)
 );
