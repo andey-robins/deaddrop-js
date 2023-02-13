@@ -33,7 +33,7 @@ export async function readMessages(user: string) {
      
   
         
-        //userReadMessage(user);  //Attempt at using database to store user will try to figure out later 
+        userReadMessage(user);  
         });
 
     } catch (error) {
