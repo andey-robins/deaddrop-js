@@ -1,4 +1,4 @@
-import { getMessagesForUser, userExists, userReadMessage } from "./db";
+/*import { getMessagesForUser, userExists, userReadMessage } from "./db";
 import { authenticate } from "./session";
 
 export async function readMessages(user: string) {
@@ -41,4 +41,4 @@ export async function readMessages(user: string) {
     } catch (error) {
         console.error("Error occured during reading.", error);
     }
-}
+}*/
