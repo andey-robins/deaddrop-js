@@ -8,10 +8,10 @@ export const userReadMessage = async (reader: string, username: string) => {
             (reader, username)
         VALUES (
             (SELECT id FROM Users WHERE user = :user),
-            (SELECT user FROM Users WHERE user = :user)
+            (SELECT user FROM Users WHERE username = :user)
         )
 `, {
     ":user": reader,
-    ":user": username,
+    ":username": username,
    });
 }
