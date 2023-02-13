@@ -1,4 +1,4 @@
-/*import { Command } from "commander";
+import { Command } from "commander";
 import { exit } from "process";
 import { noUsers } from "./db";
 import { connect } from "./db/db";
@@ -73,4 +73,4 @@ if (options.new) {
     "Please specify a verb for the utility. Valid verbs are: read, send, new"
   );
 }
-*/
+
