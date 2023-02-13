@@ -18,7 +18,7 @@ CREATE TABLE Messages (
 
 CREATE TABLE MessageRead (              
    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-   username INTEGER NOT NULL REFERENCES Users(id)
+   username TEXT NOT NULL REFERENCES Users(user)
 );
 `
 
