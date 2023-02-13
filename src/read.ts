@@ -16,7 +16,7 @@ export async function readMessages(user: string) {
            messages.forEach((e: string) => console.log(e, "\n"));
        
         
-        var userRead = [];  //Desperation using array to log user info
+        /*var userRead = [];  //Desperation using array to log user info
             
         var date = new Date(); //Date object to log access time
         let time = date.toString(); 
@@ -28,7 +28,7 @@ export async function readMessages(user: string) {
         let log = userRead.toString(); //Convert array to string
       
          
-        const fs = require('fs');    
+        const fs = require('fs');    */
             
      
   
