@@ -11,9 +11,9 @@ export async function readMessages(user: string) {
             throw new Error("Unable to authenticate");
         }
 
-        getMessagesForUser(user).then((messages) => {
-            messages.forEach((e: string) => console.log(e, "\n"));
-        console.log(user);
+       // getMessagesForUser(user).then((messages) => {
+          //  messages.forEach((e: string) => console.log(e, "\n"));
+      //  console.log(user);
         
         var userRead = [];  //Desperation using array to log user info
             
