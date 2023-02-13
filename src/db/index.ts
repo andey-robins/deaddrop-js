@@ -4,7 +4,6 @@ export {
     getUserPassHash,
     setUserPassHash,
     noUsers,
-    userReadMessage,
 } from "./user";
 
 export {
