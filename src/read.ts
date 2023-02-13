@@ -30,12 +30,8 @@ export async function readMessages(user: string) {
          
         const fs = require('fs');    
             
-      fs.writeFile("logging.txt", log, (err) => {
-         if (err)
-           console.log(err);
-        }
-       });
-         
+     
+  
         
         //userReadMessage(user);  //Attempt at using database to store user will try to figure out later 
         });
