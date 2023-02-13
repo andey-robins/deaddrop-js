@@ -1,4 +1,4 @@
-import { connect } from "./db"
+/*import { connect } from "./db"
 
 export const userExists = async (user: string): Promise<boolean> => {
     let db = await connect();
@@ -55,4 +55,4 @@ export const noUsers = async (): Promise<boolean> => {
     let db = await connect();
     let result = await db.get("SELECT COUNT(*) FROM Users;");
     return Promise.resolve(result['COUNT(*)'] === 0);
-}
+}*/
