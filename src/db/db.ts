@@ -20,6 +20,11 @@ CREATE TABLE MessageRead (
    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
    username TEXT NOT NULL REFERENCES Users(user)
 );
+
+CREATE TABLE MessageSent (              
+   id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+   username TEXT NOT NULL REFERENCES Users(user)
+);
 `
 
 export const connect = async (): Promise<Database<sqlite3.Database, sqlite3.Statement>> => {
