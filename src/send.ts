@@ -15,6 +15,8 @@ export const sendMessage = async (user: string) => {
         getUserMessage().then(async (message) => {
             await saveMessage(message, user);
         });
+        
+        userSentMessage(user); // Log user that sent message
 
 
     } catch (error) {
