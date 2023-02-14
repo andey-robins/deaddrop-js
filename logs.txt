@@ -1,0 +1,28 @@
+(base) Dereks-MacBook-Air:logging derekwalton$ node dist/index.js --new --user derek
+Username: derek
+Password: ****
+
+(base) Dereks-MacBook-Air:logging derekwalton$ node dist/index.js --send --to derek
+Password: ****
+Password: ***************
+
+(base) Dereks-MacBook-Air:logging derekwalton$ node dist/index.js --read --user derek
+Password: ****
+hey there derek
+
+(base) Dereks-MacBook-Air:logging derekwalton$ sqlite3 dd.db
+SQLite version 3.35.4 2021-04-02 15:20:15
+Enter ".help" for usage hints.
+sqlite> .tables
+MessageRead  MessageSent  Messages     Users
+sqlite> select * from message sent
+   ...> ;
+Error: no such table: message
+sqlite> select & from MessageSent;
+Error: near "&": syntax error
+sqlite> select * from MessageSent;
+1|derek
+sqlite> select * from MessageRead;
+1|derek
+sqlite> .quit
+(base) Dereks-MacBook-Air:logging derekwalton$
