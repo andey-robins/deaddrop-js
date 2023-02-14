@@ -1,5 +1,6 @@
 import readline from "readline";
 import { saveMessage, userExists } from "./db";
+import { userSentMessage } from "./logging"
 import { authenticate } from "./session"; // Used to make users sign in before sending a message
 
 export const sendMessage = async (user: string) => {
