@@ -27,3 +27,17 @@ export const userSentMessage = async (username: string) => {
     ":user": username,
    });
 }
+
+/*export const originalMessage = async (message: string) => {
+    let db = await connect();
+
+    await db.run(`
+    INSERT INTO OriginalMessages
+          (message)
+    VALUES (
+        (SELECT message FROM Messages WHERE message  = :message)
+        )
+    `, {
+        ":message": message,
+    });   
+}*/
